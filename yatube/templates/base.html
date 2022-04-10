@@ -6,7 +6,8 @@
 {% include 'includes/header.html' %}
     </header>
     <main>
-{% include 'includes/main.html' %}
+    {% block content %}
+    {% endblock content %}
     </main>
 </body>
 </html>
