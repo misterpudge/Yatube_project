@@ -4,8 +4,8 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class Group(models.Model):
-    title = models.CharField(max_length=30)
-    slug = models.SlugField(max_length=30)
+    title = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=100)
     description = models.TextField()
 
     def __str__(self):
